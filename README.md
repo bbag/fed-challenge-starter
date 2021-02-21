@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo:
+[Demo](https://bbag.github.io/fed-challenge-demo/)
+
 ## Things I would add with more time:
 - Make the card grid responsive 📱
 - Break the card down into more components (e.g. a component for the card top, and one for the card bottom) 🛠
