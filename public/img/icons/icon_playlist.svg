@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24">
+	<style type="text/css">
+		.a {
+			fill: #FFF;
+		}
+		.b {
+			clip-path: url(#XMLID_14_);
+		}
+	</style>
+	<path id="Page_1_2_" class="a" d="M2,6h17v1H2V6z M2,10h17v1H2V10z M17,13l5,3l-5,3V13z M18,17.2l2.1-1.2L18,14.8V17.2z M2,14h13
+		v1H2V14z"/>
+	<g id="XMLID_2_">
+		<defs>
+			<path id="XMLID_3_" d="M2,6h17v1H2V6z M2,10h17v1H2V10z M17,13l5,3l-5,3V13z M18,17.2l2.1-1.2L18,14.8V17.2z M2,14h13v1H2V14z"/>
+		</defs>
+		<clipPath id="XMLID_14_">
+			<use xlink:href="#XMLID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Mask_by_Page_1_1_" class="b">
+			<g id="Select_Color_2_">
+				<path id="Rectangle_4_4_" class="a" d="M0,0h24v24H0V0z"/>
+			</g>
+		</g>
+	</g>
+</svg>

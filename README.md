@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo:
+[Demo](#) (coming soon!)
+
+## Things I would add with more time:
+- Make the card grid responsive
+- Break the card down into more components (e.g. a component for the card top, and one for the card bottom)
+- Add ARIA labels for full accessibility
+- Replace the animated card shadows on hover with a more performant work-around
+
 # Challenge Instructions
 
 Thanks for your interest in becoming a member of iFit's front end team! As part of the application process, we ask that you complete the following challenge.

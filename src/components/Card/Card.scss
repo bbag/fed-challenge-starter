@@ -1,0 +1,170 @@
+@import "../../globalStyles.scss";
+
+$transition-function: 100ms ease-out;
+
+.card {
+    border-radius: 0.375rem;
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.35);
+    color: $color__text;
+    display: grid;
+    grid-template-areas: "card-top" 
+                         "card-bottom";
+    grid-template-rows: auto 1fr;
+    max-width: 20rem;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow $transition-function;
+    z-index: 1;
+
+    &:hover,
+    &:focus-within {
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.35); // Animating box-shadow isn't *ideal* for performance, but with more time I could make a more performant work-around :)
+        z-index: 2; // Brings it above the other cards, in case the box shadow gets clipped off
+
+        & .card__cta a {
+            opacity: 1;
+        }
+    }
+}
+
+// Card top section
+.card__top {
+    background-position: center center;
+    background-size: cover;
+    content: "";
+    grid-area: card-top;
+    height: 10rem;
+    position: relative;
+}
+
+.card__thumbnail {
+    display: block;
+    width: 100%;
+}
+
+.card__playlist {
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    width: 7rem;
+
+    &::before {
+        background: #000B28;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0.54;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.card__playlist__workout-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card__playlist__workout-text {
+    display: block;
+    font-size: 0.675rem;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+.card__playlist__icon {
+    width: 1.5rem;
+}
+
+// Card bottom section
+.card__bottom {
+    background: #FFF;
+    display: grid;
+    gap: 0.5rem;
+    grid-area: card-bottom;
+    grid-template-areas: "content"
+                         "cta";
+    grid-template-rows: auto 1fr;
+    padding: 1rem;
+}
+
+.card__content {
+    display: grid;
+    gap: 0.5rem 1rem;
+    grid-template-areas: "title avatar"
+                         "stats stats";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+}
+
+.card__title {
+    grid-area: title;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card__avatar {
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0.25rem;
+    content: "";
+    grid-area: avatar;
+    height: 2rem;
+    width: 2rem;
+}
+
+.card__stats,
+.card__stats__time,
+.card__stats__distance {
+    align-items: center;
+    display: flex;
+}
+
+.card__stats {
+    grid-area: stats;
+
+    &> *:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+}
+
+.card__stats__icon {
+    margin-right: 0.25rem;
+    width: 0.875rem;
+}
+
+.card__stats__text {
+    font-size: 0.675rem;
+    font-weight: bold;
+}
+
+.card__cta {
+    align-items: end;
+    display: grid;
+
+    & a {
+        color: $color__link;
+        font-size: 0.875rem;
+        font-weight: bold;
+        line-height: 1;
+        opacity: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: opacity $transition-function;
+    }
+}

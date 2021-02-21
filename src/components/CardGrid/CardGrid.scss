@@ -1,0 +1,10 @@
+@import "../../globalStyles.scss";
+
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 18rem);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
