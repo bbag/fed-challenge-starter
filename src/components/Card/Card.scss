@@ -10,7 +10,6 @@ $transition-function: 100ms ease-out;
     grid-template-areas: "card-top" 
                          "card-bottom";
     grid-template-rows: auto 1fr;
-    max-width: 20rem;
     overflow: hidden;
     position: relative;
     transition: box-shadow $transition-function;
