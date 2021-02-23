@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - ✏ Add ARIA labels for full accessibility
 - ⚡ Replace the animated card shadows on hover with a more performant work-around
 - 🎨 Inline the SVG icons for more flexible styling and optimize with sprites
+- 📷 Use image imports instead of hardcoding
 
 # Challenge Instructions
 
