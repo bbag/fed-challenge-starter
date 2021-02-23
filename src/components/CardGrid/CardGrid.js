@@ -94,7 +94,7 @@ class CardGrid extends Component {
             <ul className="card-grid">
                 {
                     /** Returns an array of card <li> elements */
-                    this.state.cards.map(card => {
+                    this.state.cards.map((card, index) => {
                         return <Card
                             cardTitle={card.cardTitle}
                             image={card.image}
@@ -104,6 +104,7 @@ class CardGrid extends Component {
                             playlistCount={card.playlistCount}
                             playlistLink={card.playlistLink}
                             detailsLink={card.detailsLink}
+                            key={index}
                         />
                     })
                 }
